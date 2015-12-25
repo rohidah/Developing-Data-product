@@ -1,0 +1,41 @@
+Project Slides for Simple Shiny App (SSA)
+========================================================
+author: Rohidah Maskuri
+date: 24th Dec 2015
+
+Simple Shiny App (SSA)
+========================================================
+The SSA  is a small app developed using shiny platform. The aim of the app is to show the various widgets that can be used and applied to analyse 3 preloaded dataset namely, **cars**, **rock** and **women**. 
+
+There are 2 sections of the SSA
+
+1. **sidebar panel**. This panel is located in the left side of the app and used to control the information displayed in the main panel.  There are 4 types of input buttons used in this panel, i.e **title** using textbox, **dataset** using dropdown menu, **no of observations** using slide and the **color of histogram** using the radio button. 
+
+
+Simple Shiny App (continue)
+========================================================
+2. **main panel**. This panel located on the right side of the app. It displays information in 4 tabs as shown below
+  +  **Plot** tab displays the histogram of the chosen dataset 
+  +  **Summary** tab displays the data summary of the chosen dataset
+  +  **Structure** tab displays the data in horizontal manner
+  +  **Table** tab displays the information of the chosen dataset. The number of rows displayed is based on the slider information obtained from the sidebar panel.
+  +  **Documentation** tab displays the information about the app that users can refer to.
+
+Simple Shiny App Snapshot
+========================================================
+
+![alt text](main.jpg)
+The SSA app can be accessed at https://rohidah.shinyapps.io/shinyapp
+
+
+
+Samples of information generated
+========================================================
+Below are the summary and header generated for the dataset **women**
+
+```{r, echo=FALSE}
+summary(women)
+str(women)
+```
+
+                    HAPPY TRYING!
